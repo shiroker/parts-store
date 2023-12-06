@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/carPartStore.iml" filepath="$PROJECT_DIR$/.idea/carPartStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carPartsStoreERP/carPartsStoreERP.iml" filepath="$PROJECT_DIR$/carPartsStoreERP/carPartsStoreERP.iml" />
+    </modules>
+  </component>
+</project>

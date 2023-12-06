@@ -1,0 +1,119 @@
+openapi: 3.0.0
+info:
+  title: CarPartStore-API
+  version: '1.0'
+  description: API des CarPartStore-Backends
+  contact:
+    email: ata@hbt.de
+    name: ata
+tags:
+  - name: car-part
+servers:
+  - url: 'http://localhost:80980/api'
+    description: 'Localhost:8070 generate server url'
+paths:
+  /car-part:
+    get:
+      summary: get all car parts
+      operationId: get-all-car-parts
+      responses:
+        '200':
+          description: all of car part
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: ./components/FcCarPart.v1.yaml
+      tags:
+        - car-part
+      description: get car parts
+    parameters: [ ]
+    post:
+      summary: add car part
+      operationId: add-car-part
+      responses:
+        '200':
+          description: add car part
+          content:
+            application/json:
+              schema:
+                $ref: ./components/FcCarPart.v1.yaml
+      tags:
+        - car-part
+      description: add and return new car part
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: ./components/FcCarPart.v1.yaml
+    patch:
+      summary: order car parts
+      operationId: order-car-parts
+      tags:
+        - car-part
+      description: order car parts
+      requestBody:
+        content:
+          application-json:
+            schema:
+              type: array
+              items:
+                $ref: ./components/FcCarPart.v1.yaml
+      responses:
+        '200':
+          description: all of car part
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: ./components/FcCarPart.v1.yaml
+  '/car-part/{carPartiId}':
+    parameters:
+      - schema:
+          type: integer
+        name: carPartiId
+        in: path
+        required: true
+        description: 'the id of carPart to update or to get of to delete'
+    put:
+      summary: update car part
+      operationId: update-car-part
+      responses:
+        '200':
+          description: update car part
+          content:
+            application/json:
+              schema:
+                $ref: ./components/FcCarPart.v1.yaml
+      tags:
+        - car-part
+      description: update car part
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: ./components/FcCarPart.v1.yaml
+    get:
+      summary: get car part
+      operationId: get-car-part-by-id
+      responses:
+        '200':
+          description: get car part
+          content:
+            application/json:
+              schema:
+                $ref: ./components/FcCarPart.v1.yaml
+      tags:
+        - car-part
+      description: get car part by id
+    delete:
+      summary: delete car part
+      operationId: delete-car-part-by-id
+      description: delete car part by id
+      responses:
+        '200':
+          description: ok
+      tags:
+        - car-part

@@ -1,0 +1,13 @@
+title: FcCarPartType
+type: string
+enum:
+  - REIFEN_FELGEN
+  - SCHEIBEN
+  - SONSTIGES
+  - KAROSSERIE
+  - INNEN_AUSSTATTUNG
+  - SCHRAUBEN
+  - MOTOR
+  - FLUESSIGKEIT
+  - FARBE
+

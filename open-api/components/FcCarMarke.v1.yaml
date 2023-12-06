@@ -1,0 +1,49 @@
+title: FcCarMarke
+type: string
+enum:
+  - ALPHA_ROMEO
+  - AUDI
+  - BENTLEY
+  - BMW
+  - BUGATTI
+  - CHEVROLET
+  - CHRYSLER
+  - CITROEN
+  - DACIA
+  - DAEWOO
+  - DAIHATSU
+  - DODGE
+  - FERRARI
+  - FIAT
+  - FORD
+  - HONDA
+  - HYUNDAI
+  - JAGUAR
+  - JEEP
+  - KIA
+  - LADA
+  - LAMBORGHINI
+  - LAND_ROVER
+  - LEXUS
+  - MASERATI
+  - MAZDA
+  - MERCEDES_BENZ
+  - MINI
+  - MITSUBISHI
+  - MORGAN
+  - NISSAN
+  - OPEL
+  - PEUGEOT
+  - PORSCHE
+  - RENAULT
+  - ROLLS_ROYCE
+  - SEAT
+  - SKODA
+  - SUBARU
+  - SUZUKI
+  - TESLA
+  - TOYOTA
+  - VOLKSWAGEN
+  - VOLVO
+  - SONSTIGES
+

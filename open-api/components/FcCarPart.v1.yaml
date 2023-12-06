@@ -1,0 +1,49 @@
+title: FcCarPart
+type: object
+properties:
+  id:
+    type: integer
+    format: int64
+  name:
+    type: string
+  carModel:
+    type: string
+  carPartType:
+    $ref: ./FcCarPartType.v1.yaml
+  carMarke:
+    $ref: ./FcCarMarke.v1.yaml
+  barCode:
+    type: string
+  quantity:
+    type: integer
+  quantityLimit:
+    type: integer
+  packageCount:
+    type: integer
+  rabatt:
+    type: integer
+    format: int64
+  price:
+    type: integer
+    format: int64
+  volumeInCube:
+    type: integer
+    format: int64
+  totalWeightInKg:
+    type: integer
+    format: int64
+required:
+  - id
+  - name
+  - carModel
+  - carPartType
+  - carMarke
+  - barCode
+  - rabatt
+  - price
+  - volumeInCube
+  - totalWeightInKg
+  - quantity
+  - quantityLimit
+  - packageCount
+
